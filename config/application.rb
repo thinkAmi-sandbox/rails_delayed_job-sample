@@ -23,5 +23,20 @@ module RailsDelayedJobSample
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    # Active Job のバックエンドとして、 delayed_job を使う
+    config.active_job.queue_adapter = :delayed_job
+
+    # タイムゾーン設定
+    # https://api.rubyonrails.org/classes/ActiveSupport/TimeZone.html
+    config.time_zone = 'Tokyo'
+
+    # Action Mailerの設定
+    # キュー名を設定
+    # https://guides.rubyonrails.org/configuring.html#config-action-mailer-deliver-later-queue-name
+    config.action_mailer.deliver_later_queue_name = 'mail_queue'
+
+    # メールの送信者
+    config.action_mailer.default_options = { from: 'no-reply@example.com' }
   end
 end
