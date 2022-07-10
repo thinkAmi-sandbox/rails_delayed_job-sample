@@ -1,24 +1,12 @@
-# README
+# rails_delayed_job-sample
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Tested Environment
 
-Things you may want to cover:
+- Rails 7.0.3
+- delayed_job 4.1.10
+- delayed_job_active_record 4.1.7
+- rspec-rails 6.0.0.rc1
 
-* Ruby version
+## Related Blog (Written in Japanese)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- [Rails + Active Job + Delayed::Jobにて、ジョブを作ってみたり、メールジョブと組み合わせてみたり、テストを書いてみたりしてみた - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2022/07/10/222259)
